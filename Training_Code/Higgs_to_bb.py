@@ -113,7 +113,7 @@ keras_model.fit(feature_array, label_array, batch_size=1024,
 
      
 # load testing file
-feature_array_test, label_array_test = get_features_labels('ntuple_merged_1.h5')
+feature_array_test, label_array_test = get_features_labels('ntuple_merged_0.h5')
 
 # reload best weights
 keras_model.load_weights('keras_model_best.h5')
