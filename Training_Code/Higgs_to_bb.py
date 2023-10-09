@@ -97,7 +97,7 @@ x = Dense(32, name = 'dense_2', activation='relu')(x)
 x = Dense(32, name = 'dense_3', activation='relu')(x)
 outputs = Dense(nlabels, name = 'output', activation='softmax')(x)
 keras_model = Model(inputs=inputs, outputs=outputs)
-keras_model.compile(optimizer='adadelta', loss='categorical_crossentropy', metrics=['accuracy'])
+keras_model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
 print(keras_model.summary())
 
 
